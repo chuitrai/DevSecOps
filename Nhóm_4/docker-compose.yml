@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+  path-traversal-1:
+    build: ./level1
+    volumes:
+      - "./level1/src/:/var/www/html/"
+    ports:
+      - 8091:80
